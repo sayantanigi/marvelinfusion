@@ -1,0 +1,1597 @@
+{
+	"info": {
+		"_postman_id": "dcfda70c-1918-4992-9c4e-c070d6031460",
+		"name": "Afrebay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28322663",
+		"_collection_link": "https://winter-station-333675.postman.co/workspace/New-Team-Workspace~f2f7af83-fa66-437e-aae8-72df8fdd5d4f/collection/28322663-dcfda70c-1918-4992-9c4e-c070d6031460?action=share&creator=28322663&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "home list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/home/home_list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"home",
+						"home_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vendor list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/vendor_lists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"vendor_lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vendor detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/vendor_detail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"vendor_detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prod_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/product_details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"product_details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "freelancer list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/freelancer_lists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"freelancer_lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "freelancer detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/freelancer_detail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"freelancer_detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"post_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/home/post_details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"home",
+						"post_details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vendor pricing",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"2\",\r\n    \"country_name\": \"Global\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/vendor_pricing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"vendor_pricing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "freelancer pricing",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"1\",\r\n    \"country_name\": \"Global\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/home/freelancer_pricing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"home",
+						"freelancer_pricing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "about",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/about",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"about"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/contact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"sayantan bhakta\",\r\n    \"email\": \"sayantan@goigi.in\",\r\n    \"subject\": \"contact form - api\",\r\n    \"message\": \"Hello, this is a test message\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/save_contact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"save_contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "privacy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/privacy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"privacy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "term and conditions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/term_and_conditions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"term_and_conditions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "careertips details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"careertip_id\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/careertips_details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"careertips_details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_id\": \"\",\r\n    \"title_keyword\": \"\",\r\n    \"post_id\": \"\",\r\n    \"days\": \"\",\r\n    \"subcategory_id\": \"\",\r\n    \"location\": \"\",\r\n    \"country\": \"\",\r\n    \"state\": \"\",\r\n    \"city\": \"\",\r\n    \"search_title\": \"\",\r\n    \"search_location\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/search_job",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"search_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registration",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_type\": 1,\r\n    \"first_name\": \"Sayantan\",\r\n    \"last_name\": \"Bhakta\",\r\n    \"email\": \"sayantan@goigi.in\",\r\n    \"location\": \"Kolkata\",\r\n    \"longitude\": \"22.88\",\r\n    \"latitude\": \"11.22\",\r\n    \"password\": \"111111\",\r\n    \"company_name\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"sayantan@goigi.in\",\r\n    \"password\": \"111111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send forget password email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sayantan@goigi.in\"\r\n}"
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/send_forget_password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"send_forget_password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user subscription details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"8\",\r\n    \"user_type\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/user_subscription_details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"user_subscription_details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user subscription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\" : \"8\",\r\n    \"sub_id\": \"1\",\r\n    \"sub_name\" : \"Trial Period for Freelancers\",\r\n    \"user_email\": \"sayantan@goigi.in\",\r\n    \"sub_price\" : \"0\",\r\n    \"sub_duration\": \"30\"\r\n}"
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/user_subscription",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"user_subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/user_profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"user_profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "companyname",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Sayantan1",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Bhakta1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sayantan@goigi.in",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "7586045010",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "key_skills",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "profilePic",
+							"type": "file",
+							"src": "/C:/Users/MORNING/Pictures/Saved Pictures/1 lGUL34nZvS3gXv4LNAKG3Q.jpg"
+						},
+						{
+							"key": "zip",
+							"value": "712401",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Tarakeswar",
+							"type": "text"
+						},
+						{
+							"key": "foundedyear",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "teamsize",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "02.01",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "19.91",
+							"type": "text"
+						},
+						{
+							"key": "short_bio",
+							"value": "Update profile using Rest API",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/update_profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"update_profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "education list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/education_list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"education_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save education",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\" : \"8\",\r\n    \"education\" : \"Associate Degree\",\r\n    \"passing_of_year\" : \"2013\",\r\n    \"college_name\" : \"WBUT\",\r\n    \"department\" : \"ECE\",\r\n    \"description\" : \"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/save_education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"save_education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get educationDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/get_educationDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"get_educationDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update education",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"education\" : \"Undergraduate Degrees\",\r\n    \"passing_of_year\" : \"2018\",\r\n    \"college_name\" : \"WBUT1\",\r\n    \"department\" : \"ECE1\",\r\n    \"description\" : \"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.1\",\r\n    \"id\" : \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/update_education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"update_education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete education",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/delete_education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"delete_education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "workexperience list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/workexperience_list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"workexperience_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save workexperience",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\" : \"8\",\r\n    \"designation\" : \"Associate System Engineer 1\",\r\n    \"company_name\" : \"Demo Company 1\",\r\n    \"from_date\" : \"2022-07-10\",\r\n    \"to_date\" : \"2023-07-10\",\r\n    \"description\" : \"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.\"\r\n}"
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/save_workexperience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"save_workexperience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get workexperience",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/get_workexperience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"get_workexperience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update workexperience",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"designation\" : \"Associate System Engineer I\",\r\n    \"company_name\" : \"Demo Company 1\",\r\n    \"from_date\" : \"2023-07-10\",\r\n    \"to_date\" : \"2023-07-10\",\r\n    \"description\" : \"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.1\",\r\n    \"id\" : \"4\"\r\n}"
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/update_workexperience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"update_workexperience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete workexperience",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/delete_workexperience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"delete_workexperience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save postbid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"postjob_id\": \"6\",\r\n    \"user_id\": \"8\",\r\n    \"bid_amount\": \"730\",\r\n    \"currency\": \"USD ($)\",\r\n    \"duration\": \"1 Months\",\r\n    \"description\": \"Job bidded by Sayantan2 Bhakta2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/save_postbid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"save_postbid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "myjob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/myjob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"myjob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit post job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"post_id\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/edit_post_job",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"edit_post_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update post job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2\",\r\n    \"post_title\": \"IT Support Engineer, L2\",\r\n    \"description\": \"IT Support Engineer, L2 Description\",\r\n    \"duration\": \"2 month\",\r\n    \"key_skills\": [1,2,3],\r\n    \"currency\": \"USD ($)\",\r\n    \"charges\": \"2501\",\r\n    \"category_id\": \"2\",\r\n    \"subcategory_id\": \"1\",\r\n    \"appli_deadeline\": \"2023-06-24\",\r\n    \"country\": \"India\",\r\n    \"state\": \"West Bengal\",\r\n    \"city\": \"Kolkata\",\r\n    \"location\": \"India, West Bengal, Kolkata\",\r\n    \"latitude\": \"22.5726\",\r\n    \"longitude\": \"88.3639\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/update_post_job",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"update_post_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobbid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"2\",\r\n    \"user_type\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/jobbid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"jobbid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "prod_name",
+							"value": "Add Product through API",
+							"type": "text"
+						},
+						{
+							"key": "prod_description",
+							"value": "Add Product through API Description",
+							"type": "text"
+						},
+						{
+							"key": "prod_image[]",
+							"type": "file",
+							"src": "/C:/xampp/htdocs/afrebay/web/uploads/products/507_image-3.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/add_product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"add_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/edit_product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"edit_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4\",\r\n    \"prod_name\": \"Add Product through API (updated)\",\r\n    \"prod_description\": \"Add Product through API Description (updated)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/update_product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"update_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/delete_product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"delete_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/delete_job",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"delete_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/delete_product_image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"delete_product_image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save employer rating",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employer_id\": \"2\",\r\n    \"worker_id\": \"8\",\r\n    \"rating\": \"4\",\r\n    \"subject\": \"Employer rating to workers\",\r\n    \"review\": \"Employer rating to workers review\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/save_employer_rating",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"save_employer_rating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chatUser list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/chatUser_list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"chatUser_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showmessage count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/showmessage_count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"showmessage_count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showmessageCountEach",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userfromid\": \"2\",\r\n    \"usertoid\": \"1\",\r\n    \"postid\": \"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/showmessageCountEach",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"showmessageCountEach"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showmessage list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userf_id\": \"2\",\r\n    \"usert_id\": \"1\",\r\n    \"post_id\": \"6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://prod-elb-1830820535.us-east-2.elb.amazonaws.com/api/showmessage_list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"afrebay",
+						"web",
+						"api",
+						"showmessage_list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
